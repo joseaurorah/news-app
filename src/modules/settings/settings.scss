@@ -1,0 +1,39 @@
+.setting-section {
+  & + &::before {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 32px 0 16px 0;
+    content: '';
+    background: rgba(white, .3);
+  }
+}
+
+.setting-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+
+  & + & {
+    margin-top: 16px;
+  }
+}
+
+.setting-select-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.setting-select {
+  max-width: 300px;
+  margin-right: auto;
+}
+
+.setting-link {
+  color: #8ab4f8;
+}
+
+.setting-button-row {
+  justify-content: space-between;
+}
